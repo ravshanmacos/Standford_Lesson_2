@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3952C3EB2BE38CE100F77CAD /* Standford_Lesson_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952C3EA2BE38CE100F77CAD /* Standford_Lesson_2App.swift */; };
-		3952C3ED2BE38CE100F77CAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952C3EC2BE38CE100F77CAD /* ContentView.swift */; };
+		3952C3ED2BE38CE100F77CAD /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952C3EC2BE38CE100F77CAD /* EmojiMemoryGameView.swift */; };
 		3952C3EF2BE38CE200F77CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3952C3EE2BE38CE200F77CAD /* Assets.xcassets */; };
 		3952C3F22BE38CE200F77CAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3952C3F12BE38CE200F77CAD /* Preview Assets.xcassets */; };
+		39E80D7E2C01E04E00CAB3C5 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E80D7D2C01E04E00CAB3C5 /* MemoryGame.swift */; };
+		39E80D802C01E28C00CAB3C5 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E80D7F2C01E28C00CAB3C5 /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3952C3E72BE38CE100F77CAD /* Standford_Lesson_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Standford_Lesson_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3952C3EA2BE38CE100F77CAD /* Standford_Lesson_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standford_Lesson_2App.swift; sourceTree = "<group>"; };
-		3952C3EC2BE38CE100F77CAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3952C3EC2BE38CE100F77CAD /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		3952C3EE2BE38CE200F77CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3952C3F12BE38CE200F77CAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39E80D7D2C01E04E00CAB3C5 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		39E80D7F2C01E28C00CAB3C5 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				3952C3EA2BE38CE100F77CAD /* Standford_Lesson_2App.swift */,
-				3952C3EC2BE38CE100F77CAD /* ContentView.swift */,
+				3952C3EC2BE38CE100F77CAD /* EmojiMemoryGameView.swift */,
+				39E80D7D2C01E04E00CAB3C5 /* MemoryGame.swift */,
+				39E80D7F2C01E28C00CAB3C5 /* EmojiMemoryGame.swift */,
 				3952C3EE2BE38CE200F77CAD /* Assets.xcassets */,
 				3952C3F02BE38CE200F77CAD /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3952C3ED2BE38CE100F77CAD /* ContentView.swift in Sources */,
+				3952C3ED2BE38CE100F77CAD /* EmojiMemoryGameView.swift in Sources */,
 				3952C3EB2BE38CE100F77CAD /* Standford_Lesson_2App.swift in Sources */,
+				39E80D7E2C01E04E00CAB3C5 /* MemoryGame.swift in Sources */,
+				39E80D802C01E28C00CAB3C5 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
