@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
+    private let aspectRatio: CGFloat = 2/3
     
     var body: some View {
         VStack {
@@ -25,44 +26,15 @@ struct EmojiMemoryGameView: View {
         .padding()
     }
     
-    var cards: some View {
-        GeometryReader { geometry in
-            let gridItemSize = gridItemWidthThatFits(count: viewModel.cards.count, size: geometry.size, atAspectRation: 2/3)
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: gridItemSize), spacing: 0)], spacing: 0) {
-                ForEach(viewModel.cards) { card in
-                    CardView(card)
-                        .aspectRatio(2/3, contentMode: .fit)
-                        .padding(4)
-                        .onTapGesture {
-                            viewModel.choose(card)
-                    }
+    private var cards: some View {
+        AspectVGrid(viewModel.cards, aspectRatio: aspectRatio) { card in
+            CardView(card)
+                .padding(4)
+                .onTapGesture {
+                    viewModel.choose(card)
                 }
-            }
-            .foregroundColor(.orange)
         }
-    }
-    
-    func gridItemWidthThatFits(
-        count: Int,
-        size: CGSize,
-        atAspectRation aspectRatio: CGFloat
-    ) -> CGFloat {
-        let count = CGFloat(count)
-        var columnCount = 1.0
-        
-        repeat {
-            let width = size.width / columnCount //column width
-            let height = width  / aspectRatio // row height
-            
-            let rowCount = (count / columnCount).rounded(.up) // 
-            
-            if rowCount * height < size.height {
-                return (size.width / columnCount).rounded(.down)
-            }
-            columnCount += 1
-        } while columnCount < count
-        
-        return min(size.width/count, size.height * aspectRatio).rounded(.down)
+        .foregroundColor(.orange)
     }
 }
 
